@@ -1,4 +1,4 @@
-// src/Tabs.js
+
 import React from 'react';
 import { Tabs as MuiTabs, Tab, Card, CardContent } from '@mui/material';
 

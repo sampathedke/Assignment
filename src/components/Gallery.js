@@ -1,4 +1,4 @@
-// src/Gallery.js
+
 import React, { useState } from 'react';
 import { Card, CardContent, Button, IconButton } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';

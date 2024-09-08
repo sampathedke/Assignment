@@ -1,4 +1,4 @@
-// src/App.js
+
 import React from "react";
 import Tabs from "./components/Tabs";
 import Gallery from "./components/Gallery";
