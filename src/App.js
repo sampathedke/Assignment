@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import Tabs from "./components/Tabs";
+import Gallery from "./components/Gallery";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col lg:flex-row h-screen bg-gray-50">
+      {/* Left Side (empty space) */}
+      <div className="hidden lg:block lg:w-1/2 bg-gray-200"></div>
+
+      {/* Right Side Widgets */}
+      <div className="w-full lg:w-1/2 p-6 space-y-6 bg-zinc-600">
+        <Tabs />
+        <Gallery />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
